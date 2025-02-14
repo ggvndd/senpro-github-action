@@ -38,8 +38,8 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            eval "${{ssh agent -s}}"
-            ssh-add ~/.ssh/ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDFP+hOufZ/kkhFA+MXYcN/RURKTnp3PP28nmNgtavbXrwa/TAjIjfDk6byQ7A/gDgI78SFz6fhk8+aJ6AXIt/mVnm20Sn+hUSXeH02uOhXkFK33405gUJTzrRZVXtAsniAzPMG/R9uFXCr2YE+LyX9lQ4cDn/75rpnZA0h7YdO6ehz4XppFYiyxQclXCt/w/gFD44G2MQl71O/rmeTPq7B2IY7njdG7a+1N3ViD5NTH1fRktRdoJyqQ0901qmliyzgGV8BwShb3SFkYsxT29kRug9sh201OJyBneiX8AtxQbI5N3jZ9WLP5U+npfQvqiNmT7bz2IvgZS1SbTevt8c/MFUWgAgaA6+qBLURVaXmw9cCE+aWBj/bVOGrF+ZpdCaqmuUalcXTE/gKpx1axSRZyR2XrmWKVs5fu1B/sUkhhJudIR3MKjLcnGfAP/MoAw8BSpJTOGBD24vzSzwFkjBD6bLfbCyA0qxjQg+LZjhCGb0kAVKxi4elD/MFMsgR5WFqMZyO52Ibt2xmkeDzozaQkXnf97mRs2+tq40Q7R0CAzWf5ZcA0rj+6K/MBZN+3OT9sXJXEspRexx6xQhnwCUDoiSjqr98ee7zvNRtf/z70Y7h5v+0J66Uwk56iqMDEwCWuE8O5P+X/2iVjBk5FKpAoObfA2+YGnAaQW9mCKjwNQ== Praktikan75
+            eval "$(ssh agent -s)"
+            ssh-add ~/.ssh/ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDFP+hOufZ/kkhFA+MXYcN/RURKTnp3PP28nmNgtavbXrwa/TAjIjfDk6byQ7A/gDgI78SFz6fhk8+aJ6AXIt/mVnm20Sn+hUSXeH02uOhXkFK33405gUJTzrRZVXtAsniAzPMG/R9uFXCr2YE+LyX9lQ4cDn/75rpnZA0h7YdO6ehz4XppFYiyxQclXCt/w/gFD44G2MQl71O/rmeTPq7B2IY7njdG7a+1N3ViD5NTH1fRktRdoJyqQ0901qmliyzgGV8BwShb3SFkYsxT29kRug9sh201OJyBneiX8AtxQbI5N3jZ9WLP5U+npfQvqiNmT7bz2IvgZS1SbTevt8c/MFUWgAgaA6+qBLURVaXmw9cCE+aWBj/bVOGrF+ZpdCaqmuUalcXTE/gKpx1axSRZyR2XrmWKVs5fu1B/sUkhhJudIR3MKjLcnGfAP/MoAw8BSpJTOGBD24vzSzwFkjBD6bLfbCyA0qxjQg+LZjhCGb0kAVKxi4elD/MFMsgR5WFqMZyO52Ibt2xmkeDzozaQkXnf97mRs2+tq40Q7R0CAzWf5ZcA0rj+6K/MBZN+3OT9sXJXEspRexx6xQhnwCUDoiSjqr98ee7zvNRtf/z70Y7h5v+0J66Uwk56iqMDEwCWuE8O5P+X/2iVjBk5FKpAoObfA2+YGnAaQW9mCKjwNQ== Praktikan75
             echo "Cek folder project";
             [ ! -d "${HOME}/senpro/497221/modul02/senpro-github-action>>/* ] &&
               {
